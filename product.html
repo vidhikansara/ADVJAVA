@@ -1,0 +1,30 @@
+<html>
+<body>
+<%
+
+String name=(String)session.getAttribute("user");
+out.print("Hello ! "+name);
+
+%>
+<center>
+<h2>Product Page</h2>
+<form action="product.jsp" method="post">
+<h4>LAPTOP</h4>
+LAPTOP : <input type="checkbox" name="laptop" value="LAPTOP"><br>
+PRICE : <input type="text" name="price_laptop" value="50000"><br>
+Qutity : <input type="text" name="qty_laptop" value="1"><br><br>
+
+<h4>MOBILE</h4>
+MOBILE : <input type="checkbox" name="mobile" value="MOBILE"><br>
+PRICE : <input type="text" name="price_mobile" value="25000"><br>
+Qutity : <input type="text" name="qty_mobile" value="1"><br><br>
+
+<h4>POWERBANK</h4>
+MOBILE : <input type="checkbox" name="powerbank" value="powerbank"><br>
+PRICE : <input type="text" name="price_powerbank" value="5000"><br>
+Qutity : <input type="text" name="qty_powerbank" value="1"><br><br>
+<input type="submit" name="submit_product" value="Add to Cart">
+</form>
+</center>
+</body>
+</html>
